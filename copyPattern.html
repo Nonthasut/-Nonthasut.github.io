@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <style>
+
+        .uibar{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            color: #000000;
+            background-color:black;
+            width: 100%
+        }
+        .card{
+            display:flex ;
+            justify-content: center;
+            border-color:black;
+            flex-direction: column;
+            margin-top: 90px;
+        }
+        .topic{
+            margin-top: 50px;
+        }
+        .commentsbox{
+            width:160px;
+            height:90px;
+        }
+        .submit{
+            width:;
+            height:;
+        }
+    </style>
+</head>
+<body>
+
+<div class ="uibar"> 
+
+<p style="color:White;">HeaderBar</p>
+
+<button type=""></button>
+<button type=""></button>
+<button type=""></button>
+</div>
+
+<div class="topic">
+<h1>freeCodeCamp Survey Form</h1>
+<h2>Thank you for taking the time to help us improve the platform</h2>
+</div>
+<form class="card" action="input-survey">
+<h2>Name</h2>
+<label for="name">
+ <input type="text" name="surveyForm" id="name" placeholder="Enter your name" required value="name">  
+</label>
+<h2>Email</h2>
+<label for="email">
+<input type="text" name="surveyForm" id="email" placeholder="Enter your Email" required value="email">  
+</label>
+<h2>Age(optional)</h2>
+<label for="age">
+<input type="text" name="surveyForm" id="age" placeholder="Age" required value="age">  
+</label>
+<h2>Which option best describes your current role?</h2>
+<label for="role">
+<input type="text" name="surveyForm" id="role" placeholder="Select current role" required value="role">
+</label>
+<h2>Would you recommend freeCodeCamp to a friend?</h2>
+<label for="Definitely">
+<input type="radio" name="surveyForm" id="definitely" default>Definitely
+</label>
+<label for="Maybe">
+<input type="radio" name="surveyForm" id="maybe">Maybe
+</label>
+<label for="notSure">
+<input type="radio" name="surveyForm" id="notSure">Not sure
+</label>
+<h2>What is your favorite feature of freeCodeCamp?</h2>
+<!-- select ไม่ใช่ text-->
+<label for="favFea">
+<select name="surveyForm" id="favFea" placeholder="Select an option">
+<option value="Challenges">Challenges</option>
+<option value="Projects">Projects</option>
+<option value="Community">Community</option>
+<option value="Open Source">Open Source</option>
+</select>
+</label>
+<!-- Select ไม่ใช่ text-->
+<h2>What would you like to see improved?</h2>
+<h3>(Check all that apply)</h3>
+<label for="frontProject">
+<input type="checkbox" name="surveyForm" id="frontProject">Front-end Projects  
+</label>
+<label for="backProject">
+<input type="checkbox" name="surveyForm" id="backProject">Back-end Projects  
+</label>
+<label for="dataVi">
+<input type="checkbox" name="surveyForm" id="dataVi">Data Visualization  
+</label>
+ <label for="challenges">
+<input type="checkbox" name="surveyForm" id="challenges">Challenges  
+</label>
+<label for="community">
+<input type="checkbox" name="surveyForm" id="community">Open Source Community  
+</label>
+<label for="helpRoom">
+<input type="checkbox" name="surveyForm" id="helpRoom">Gitter help rooms  
+</label>
+<label for="videos">
+<input type="checkbox" name="surveyForm" id="videos">Videos  
+</label>
+<label for="cityMeet">
+<input type="checkbox" name="surveyForm" id="cityMeet">City Meetups  
+</label>
+<label for="wiki">
+<input type="checkbox" name="surveyForm" id="wiki">Wiki  
+</label>
+<label for="forum">
+<input type="checkbox" name="surveyForm" id="forum">Forum  
+</label>
+<label for="addCourses">
+<input type="checkbox" name="surveyForm" id="addCourses">Additional Courses  
+</label>
+
+<label for="comments">
+    <textarea class="commentsbox" name="comments" id="comments" placeholder="Enter your comment here...">
+    </textarea>
+    </label>
+<button type="submit">Submit</button>
+
+</form>
+
+
+
+</body>
+</html>
+
+
+
+
