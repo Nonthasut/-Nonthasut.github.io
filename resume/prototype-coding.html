@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
@@ -319,14 +319,86 @@
         /* smooth-support-fixed */
         /* support-for-scroll(but-not-all-size) */
         /* responsive-zone */
+
+
+        /*Nightmode-button*/
+        .nightmode{
+            display:block;
+        }
+        .daymode{
+            display: none;
+        }
+        
+
     </style>
+
+    <script>
+        function nightmode(){
+        document.getElementsByClassName("container")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("avatar")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("avatar-pic")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("avatar-name")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("target")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("information")[0].style.backgroundColor="#1b1b32";
+        document.getElementsByClassName("exp-profile")[0].style.backgroundColor="#1b1b32";
+     
+        document.getElementsByClassName("container")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("avatar")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("avatar-pic")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("avatar-name")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("target")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("information")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("exp-profile")[0].style.color="#FFFFFF";
+
+        document.getElementsByClassName("name")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("detail-job")[0].style.color="#FFFFFF";
+        document.getElementsByClassName("detail-avatar")[0].style.color="#FFFFFF";
+
+        document.getElementsByClassName("nightmode")[0].style.display="none";
+        document.getElementsByClassName("daymode")[0].style.display="block";
+    }
+
+    function daymode(){
+        document.getElementsByClassName("container")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("avatar")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("avatar-pic")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("avatar-name")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("target")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("information")[0].style.backgroundColor="#FFFFFF";
+        document.getElementsByClassName("exp-profile")[0].style.backgroundColor="#FFFFFF";
+     
+        document.getElementsByClassName("container")[0].style.color="#000000";
+        document.getElementsByClassName("avatar")[0].style.color="#000000";
+        document.getElementsByClassName("avatar-pic")[0].style.color="#000000";
+        document.getElementsByClassName("avatar-name")[0].style.color="#000000";
+        document.getElementsByClassName("target")[0].style.color="#000000";
+        document.getElementsByClassName("information")[0].style.color="#000000";
+        document.getElementsByClassName("exp-profile")[0].style.color="#000000";
+        document.getElementsByClassName("avatar-name")[0].style.color="#000000";
+
+        document.getElementsByClassName("name")[0].style.color="#000000";
+        document.getElementsByClassName("detail-job")[0].style.color="#000000";
+        document.getElementsByClassName("detail-avatar")[0].style.color="#000000";
+
+
+
+        document.getElementsByClassName("nightmode")[0].style.display="block";
+        document.getElementsByClassName("daymode")[0].style.display="none";
+
+    }
+        
+    </script>
+
 </head>
 
 <body>
 
     <section>
         <div class="container">
-
+            <div>
+                <button onclick="nightmode()" class="nightmode">Nightmode</button>
+                <button onclick="daymode()" class="daymode">Daymode</button>
+            </div>
             <header class="avatar">
                 <div class="avatar-pic">
                     <img src="profile-pic.JPG" alt="pic">
@@ -338,11 +410,8 @@
                     <div class="detail-avatar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
                         distinctio earum maiores saepe iusto blanditiis id nulla repudiandae vel perspiciatis,
                         necessitatibus voluptatem corrupti itaque quod delectus aut in omnis aliquam.</div>
-
-
-
-
                 </div>
+               
             </header>
 
             <div class="target">
@@ -416,7 +485,7 @@
                     <li>Cooking</li>
                     <li>Coffee</li>
                     <li>Food travel</li>
-                    <hr class="test">
+                  
                 </div>
             </div>
 
