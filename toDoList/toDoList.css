@@ -1,7 +1,48 @@
-body{
-    background: repeating-linear-gradient(45deg,
-            yellow 0px,
-            yellow 40px,
-            black 40px,
-            black 80px);
-        }
+*{
+    padding: 0;
+    margin: 0;
+}
+.container,.navbar{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+header{
+    grid-column: 1/13;
+}
+.navbar{
+    grid-column: 1/13;
+    background-color: black;
+    color:white;
+    
+}
+.form-con{
+    background-color: #3b3b4f;
+    margin: 15px 150px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#inputAc{
+    width:900px;
+    height: 30px;
+    margin-top:10px;
+    margin-left: -70px;
+}
+#submitAc{
+    margin: 10px 15px 15px -70px;
+    height: 35px;
+}
+
+.lis-con{ 
+    background-color: #3b3b4f;
+    margin:0px 150px;
+}
+
+/* font */
+.navbar h1{
+  grid-column: 6/8;
+}
+.form-con h1, .lis-con h1,#lis{
+    color:white;
+    margin: 10px 10px 10px 35px;
+}

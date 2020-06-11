@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="toDoList.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>toDoList</title>
+    <link rel="stylesheet" type="text/css" href="toDoList.css">
+    <script src="toDoList.js"></script>
 </head>
-
 <body>
-    <div class="container p-3 my-3 bg-dark text-white">
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-
-            <a class="navbar-brand" href="#">ToDoList</a>
-
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-            </div>
-        </nav>
-        <form action="/action_page.php">
-            <div class="form-group">
-                <label for="email">Add activity</label>
-                <input type="text" class="form-control" placeholder="Add activity" id="inputAc">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="container">
+        <header>
+        <div class="navbar"><h1>toDoList</h1></div>
+    </header>
+    </div>
+    <div class="form-con">
+        <h1>Add list</h1>
+        <form action="inputAc">
+            <input type="text" id="inputAc" placeholder="Add list">
         </form>
+        <div>
+            <button id="submitAc" onclick="getList()">submit</button>
+        
+    </div>
     </div>
 
-    <div class="container p-3 my-3 bg-dark text-white">
-        <div class="li-con">
-        <h1>You have to Do this!!</h1>
-        <ul class="li"></ul>
-    </div>
-    </div>
+
+        <div class="lis-con">
+            <h1>List that what you have to do!!</h1>
+            <ul id="lis"></ul>
+        </div>
 </body>
-
 </html>

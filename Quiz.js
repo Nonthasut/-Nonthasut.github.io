@@ -68,5 +68,6 @@ function draw(n) {
 draw(4)
 
 function draw(n){
-    
+    con="";
+
 }
