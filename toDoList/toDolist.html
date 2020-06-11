@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toDoList.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container p-3 my-3 bg-dark text-white">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+            <a class="navbar-brand" href="#">ToDoList</a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            </div>
+        </nav>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="email">Add activity</label>
+                <input type="text" class="form-control" placeholder="Add activity" id="inputAc">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container p-3 my-3 bg-dark text-white">
+        <div class="li-con">
+        <h1>You have to Do this!!</h1>
+        <ul class="li"></ul>
+    </div>
+    </div>
+</body>
+
+</html>

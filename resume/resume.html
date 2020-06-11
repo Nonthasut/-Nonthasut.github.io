@@ -387,6 +387,19 @@
 
     }
         
+        function addExp(){
+        var textexp = document.getElementsByClassName("expText")[0].value;
+        var addtext = document.createTextNode(textexp);
+        var nodeLi = document.createElement("li");
+        nodeLi.appendChild(addtext);
+        document.getElementsByClassName("exp-exp")[0].appendChild(nodeLi);
+        }
+
+        function delExp(){
+          var con = document.getElementsByClassName("exp-exp")[0];
+          con.removeChild(con.childNodes[6]);
+        }
+
     </script>
 
 </head>
@@ -399,6 +412,16 @@
                 <button onclick="nightmode()" class="nightmode">Nightmode</button>
                 <button onclick="daymode()" class="daymode">Daymode</button>
             </div>
+            <div>
+                <input type="text" placeholder="Add experience" class="expText">
+                <!-- <input type="number" placeholder="Which choice exp to Del?" class="indexDel"> -->
+            </div>
+            <div>
+                <button onclick="addExp()">Add Experience</button>
+                <button onclick="delExp()" id="delBtn">Delete Experience</button>
+            </div>
+
+
             <header class="avatar">
                 <div class="avatar-pic">
                     <img src="profile-pic.JPG" alt="pic">
@@ -470,7 +493,7 @@
                     <li>Bartender at Oreintel resident hotel </li>
                     <li>Moderator board game at Board game academy</li>
 
-                    <hr>
+                    
                 </div>
 
                 <div class="exp-interest">
