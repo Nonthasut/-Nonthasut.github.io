@@ -113,45 +113,57 @@ function draw() {
 draw(4)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //..................................
 // mapFunction
-let array = [1, 2, 3, 4]
-function map(array, transfromFn) {
-    let result = [];
-    for (let i = 0; i < array.length; i++) {
-        let transfromFn = transfromFn(array[i]);
-        result.push(transfromFn);
-    }
-    return result;
-}
+// let array = [1, 2, 3, 4]
+// function map(array, transfromFn) {
+//     let result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         let transfromFn = transfromFn(array[i]);
+//         result.push(transfromFn);
+//     }
+//     return result;
+// }
 
 
-// .................
-let arr = [1, 2, 3, 4, 5, 6, 7];
-let condi = (arr, item => {
-    return item % 2 == 0;
-})
+// // .................
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let condi = (arr, item => {
+//     return item % 2 == 0;
+// })
 
-function fill(arr,condi) {
-    let result = []
-    for (let i = 0; i < arr.length; i++) {
-        if (condi(arr[i]))
-        {
-            result.push(arr);
-    }
-    return result
-}
-console.log(fillter(arr,condi))
-...................................
+// function fill(arr,condi) {
+//     let result = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (condi(arr[i]))
+//         {
+//             result.push(arr);
+//     }
+//     return result
+// }
+// console.log(fillter(arr,condi))
+// ...................................
 
-let arr = [1,2,3,4,5,6,7,8,9]
-let findCon
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let findCon
 
-function fin(arr,findCon){
-let result = [];
-for(i=0;i<arr.length;i++)
+// function fin(arr,findCon){
+// let result = [];
+// for(i=0;i<arr.length;i++)
 
-}
+// }
 
 
 
