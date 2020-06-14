@@ -1,28 +1,28 @@
-// Slide-BasicJavaScript-Part1
+// BasicJavaScript-Part1
 // 3.4:slide43-44
 // Lab1
 let human,
-name
+    name
 name = "Pack";
 human = name;
 console.log(human)
 // Lab2
 let moneyInPocket = 100;
-let nameParent = "fatherName"+"motherName";
+let nameParent = "fatherName" + "motherName";
 let address = "address";
 let universeAge = number(100000);
 //Slide:63
-hello 1
-hello name
-hello Codecamp
+// hello 1
+// hello name
+// hello Codecamp
 //Slide:64
 let name = "Pack";
 let age = 26;
 let address = "address";
-let history = name+age+address+"My history";
+let history = name + age + address + "My history";
 //Slide:94
 "" + 1 + 0 //1
- "" - 1 + 0 //-1
+"" - 1 + 0 //-1
 true + false //1
 6 / "3" //2
 "2" * "3" //6
@@ -37,32 +37,31 @@ null + 1 //1
 undefined + 1 //NaN
 " \t \n" - 2 //NaN
 //Slide 132-133
-
 let question = prompt("Who am I?");
-let ans=(question=="Pack")? "You're awesome.":"You don't know you are.";
+let ans = (question == "Pack") ? "You're awesome." : "You don't know you are.";
 alert(ans);
 
 let input = prompt("How much your score?");
 let ans;
-if(input >= 80){
+if (input >= 80) {
     alert(ans = "A");
 }
-else if(input >= 70){
+else if (input >= 70) {
     alert(ans = "B");
 }
-else if(input >= 60){
+else if (input >= 60) {
     alert(ans = "C");
 }
-else if(input >= 50){
+else if (input >= 50) {
     alert(ans = "D");
 }
-else{
+else {
     alert(ans = "F");
 }
 
 let age = prompt("How old are you?");
 let price;
-let ans = (age <= 18)? price=2000:price=3500;
+let ans = (age <= 18) ? price = 2000 : price = 3500;
 alert(price)
 //ไม่ได้แก้บัคถ้าพิมพ์ประเภทข้อมูลคือนอกจาก Number เข้าไป
 
@@ -116,17 +115,114 @@ true != true    //false
 // 3. สร้าง String ที่มีค่า "Hello, It's me. "Mario"."
 let str = '"Hello, It\'s me. "\Mario".\"'
 
+// BasicJavaScript-Part2
+//Slide 25
+// alert(2) 
+// alert(alert(1)),alert(2)
+// alert(null)
+// alert(1),allert(undefined)
+// alert(3)
+
+//Slide26
+let age = prompt("How old are you?");
+let ans = ((age >= 18) && (age <= 60)) ? "Between18-60" : "Not between18-60";
+alert(ans)
+
+let age = prompt("How old are you?");
+let ans = ((age < 18) || (age > 60)) ? "NOT Between18-60" : "Between18-60";
+alert(ans)
+
+//Slide27
+if (-1 && 0) alert('second');
+
+//Slide28
+let input = prompt("Who is you?");
+if(input==""||input==null){
+    alert("ยกเลิก")
+}
+else if(input=="Admin"){
+    let login = prompt("What is the password?")
+    if(login==""||login==null){
+    alert("ยกเลิก")
+    }
+    else if(login=="codecamp#5"){
+        alert("ยินดีต้อนรับ")
+    }
+    else{
+    alert("รหัสผ่านผิด")
+    }
+    
+}
+else if(input!="admin"){
+    alert("ฉันไม่รู้จักคุณ")
+}
+
+//slide43-47
+// 1
+//1,2,3,4 //1,2,3,4,5
+//0,1,2,3,4 //0,1,2,3,4
+
+for(i=2;i<11;i++){
+    alert(i)
+}
+
+let i = 0;
+let txt1 = "number";
+let txt2 = "!";
+while(i<3){
+alert(txt1+" "+i+txt2)
+i++;
+}
+
+
+let quiz;
+let answer;
+quiz = prompt("Put the answer for this round");
+while(answer!=quiz){
+answer = prompt("You're thinking how much value am I right?,How much am I?")
+if(answer==quiz){
+    alert("Congrantulation! You Rock!!")
+}else if(answer > quiz){
+alert("Too much")
+}else if(answer < quiz){
+alert ("I have more than you think!!")
+}
+}
 
 
 
 
 
+let i=0;
+let quiz;
+let answer = 0;
+quiz = prompt("Put the answer for this round");
+while(answer!=quiz){
+answer = prompt("You're thinking how much value am I right?,How much am I?")
+if(answer==quiz){
+    alert("Congrantulation! You Rock!!")
+}else if(answer > quiz){
+alert("Too much")
+}else if(answer < quiz){
+alert ("I have more than you think!!")
+}}
 
 
 
+let quiz;
+let quizAccept;
+while(quizAccept!=quiz){
+    quiz = prompt("Add num");
+    quiz === quizAccept;
+}
 
 
-//
+let quiz;
+let quizAccept;
+quiz = prompt("Add num");
+quizAccept = quiz;
+
+//------------------
 function draw(n) {
     let dok = "";
     for (i = 0; i < n; i++) {
