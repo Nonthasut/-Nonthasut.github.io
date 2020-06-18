@@ -137,23 +137,23 @@ if (-1 && 0) alert('second');
 
 //Slide28
 let input = prompt("Who is you?");
-if(input==""||input==null){
+if (input == "" || input == null) {
     alert("ยกเลิก")
 }
-else if(input=="Admin"){
+else if (input == "Admin") {
     let login = prompt("What is the password?")
-    if(login==""||login==null){
-    alert("ยกเลิก")
+    if (login == "" || login == null) {
+        alert("ยกเลิก")
     }
-    else if(login=="codecamp#5"){
+    else if (login == "codecamp#5") {
         alert("ยินดีต้อนรับ")
     }
-    else{
-    alert("รหัสผ่านผิด")
+    else {
+        alert("รหัสผ่านผิด")
     }
-    
+
 }
-else if(input!="admin"){
+else if (input != "admin") {
     alert("ฉันไม่รู้จักคุณ")
 }
 
@@ -162,67 +162,100 @@ else if(input!="admin"){
 //1,2,3,4 //1,2,3,4,5
 //0,1,2,3,4 //0,1,2,3,4
 
-for(i=2;i<11;i++){
+for (i = 2; i < 11; i++) {
     alert(i)
 }
 
 let i = 0;
 let txt1 = "number";
 let txt2 = "!";
-while(i<3){
-alert(txt1+" "+i+txt2)
-i++;
+while (i < 3) {
+    alert(txt1 + " " + i + txt2)
+    i++;
 }
-
 
 let quiz;
 let answer;
-quiz = prompt("Put the answer for this round");
-while(answer!=quiz){
-answer = prompt("You're thinking how much value am I right?,How much am I?")
-if(answer==quiz){
-    alert("Congrantulation! You Rock!!")
-}else if(answer > quiz){
-alert("Too much")
-}else if(answer < quiz){
-alert ("I have more than you think!!")
+while (Boolean((quiz >= 0) && (quiz <= 100)) != true) {
+    quiz = prompt("Put the answer for this round");
 }
-}
-
-
-
-
-
-let i=0;
-let quiz;
-let answer = 0;
-quiz = prompt("Put the answer for this round");
-while(answer!=quiz){
-answer = prompt("You're thinking how much value am I right?,How much am I?")
-if(answer==quiz){
-    alert("Congrantulation! You Rock!!")
-}else if(answer > quiz){
-alert("Too much")
-}else if(answer < quiz){
-alert ("I have more than you think!!")
-}}
-
-
-
-let quiz;
-let quizAccept;
-while(quizAccept!=quiz){
-    quiz = prompt("Add num");
-    quiz === quizAccept;
+while (answer != quiz) {
+    answer = prompt("You're thinking how much value am I right?,How much am I?")
+    if (answer == quiz) {
+        alert("Congrantulation! You Rock!!")
+    } else if (answer > quiz) {
+        alert("Too much")
+    } else if (answer < quiz) {
+        alert("I have more than you think!!")
+    }
 }
 
+//Version เล่นคนเดียว
+// let quiz= Math.floor(Math.random()*101);
+// let answer;
+// while(answer!=quiz){
+// answer = prompt("You're thinking how much value am I right?,How much am I?")
+// if(answer==quiz){
+//     alert("Congrantulation! You Rock!!")
+// }else if(answer > quiz){
+// alert("Too much")
+// }else if(answer < quiz){
+// alert ("I have more than you think!!")
+// }}
 
-let quiz;
-let quizAccept;
-quiz = prompt("Add num");
-quizAccept = quiz;
 
-//------------------
+//Slide56
+
+
+
+let quiz = Math.floor(Math.random() * 101);
+let answer;
+while (answer != quiz) {
+    answer = prompt("You're thinking how much value am I right?,How much am I?")
+    if (answer == quiz) {
+        alert("Congrantulation! You Rock!!")
+    } else if (answer > quiz) {
+        alert("Too much")
+    } else if (answer < quiz) {
+        alert("I have more than you think!!")
+    }
+}
+
+//Slide56
+let browser;
+browser = prompt("What's the program you open?")
+if (browser == "Edge") {
+    alert("You've got the Edge!")
+} else if (browser == "Chrome") {
+    alert("Okay we support these browsers too")
+} else if (browser == "Firefox") {
+    alert("Okay we support these browsers too")
+} else if (browser == "Safari") {
+    alert("Okay we support these browsers too")
+} else if (browser == "Opera") {
+    alert("Okay we support these browsers too")
+} else {
+    alert("We hope that page looks ok!")
+}
+
+let num = +prompt("aaaa?");
+switch (num) {
+    case 0:
+        alert("0");
+        break;
+    case 1:
+        alert("1");
+        break;
+    case 2:
+    case 3:
+        alert("2,3");
+        break;
+    default:
+        alert(undefined);
+}
+
+//Slide 78
+//1
 function draw(n) {
     let dok = "";
     for (i = 0; i < n; i++) {
@@ -231,7 +264,7 @@ function draw(n) {
     console.log(dok)
 }
 draw(1)
-
+//2
 function draw(n) {
     let dok = "";
     for (i = 0; i < n; i++) {
@@ -243,7 +276,7 @@ function draw(n) {
     console.log(dok)
 }
 draw(3)
-
+//3
 function draw(n) {
     let con = "";
     for (j = 0; j < n; j++) {
@@ -255,17 +288,19 @@ function draw(n) {
     console.log(con)
 }
 draw(3)
-
+//4
 function draw(n) {
     let con = "";
-    for (j = 0; j < n; j++) {
-        con += j + 1
-        con += "\n"
-        console.log(con)
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            con += i + 1;
+        }
+        con += "\n";
     }
+    console.log(con)
 }
 draw(5)
-
+//5
 function draw(n) {
     let con = "";
     for (i = 0; i < n; i++) {
@@ -277,17 +312,7 @@ function draw(n) {
     console.log(con)
 }
 draw(5)
-
-function draw(n) {
-    let con = "";
-    for (j = 0; j % n == 0 < n; j++) {
-        for (i = 0; i < n; i++) { con += i + 1; }
-        con += "\n";
-        console.log(con)
-    }
-}
-draw(4)
-
+//6
 function draw(n) {
     let con = ""
     let num = 1
@@ -302,7 +327,7 @@ function draw(n) {
     console.log(con)
 }
 draw(2)
-
+//7
 function draw(n) {
     let con = "";
     let num = n ** 2;
@@ -316,7 +341,7 @@ function draw(n) {
     console.log(con)
 }
 draw(5)
-
+//8
 function draw(n) {
     let con = ""
     for (i = 0; i < n; i++) {
@@ -326,22 +351,83 @@ function draw(n) {
     console.log(con)
 }
 draw(4)
-
-function draw() {
-    let con = ""
-    for (i = 1; i < n; i++) {
-        con += i * 2;
-        con += "\n"
+//9
+function draw(n) {
+    let con = "";
+    for (i = 1; i < n + 1; i++) {
+        con += Number(i * 2) + "\n"
     }
     console.log(con)
+} draw(4)
+//10
+function draw(n) {
+    let con = "";
+    let multi = 1;
+    for (i = 0; i < n; i++) {
+
+        for (j = 0; j < n; j++) {
+            con += (j + 1) * Number(multi)
+        }
+
+        if (n % j == 0) {
+            con += "\n"
+            multi++;
+        }
+        console.log(con)
+    }
+} draw(4)
+//11    
+function draw(n) {
+    let con = "";
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            if(j==i){
+                con+="_";
+            }else{
+                con+="*";
+            }
+        }
+        if (n % j == 0) {
+            con += "\n"
+        }
+        console.log(con)
+    }
+} draw(4)
+//12
+function draw(n){
+let con ="";
+let space =1;
+for(i=0;i<n;i++){
+for(j=0;j<n;j++){
+if(j==n-space){
+    con+="_";
+}else{
+    con+="*"
 }
-draw(4)
+}
+if(n%j==0){
+    con+="\n";
+    space++;
+}
+console.log(con)
+}
+}draw(4)
+//13
+function draw(n){
+let con="";
+let j=0;
+for(i=0;i<n;i++){
+switch(j){
+    case
+}
 
 
-
-
-
-
+if(n%j==0){
+con+="\n"
+}
+console.log(con)
+}
+}draw(3)
 
 
 
